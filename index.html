@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Game</title>
+  <!-- Tailwind CSS framework-->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'arial';
+      background-color: #000;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="fixed text-white text-sm ml-2 mt-1 select-none">
+    <span>Score: </span><span id="score"></span>
+  </div>
+
+  <div class="fixed inset-0 flex justify-center items-center" id="toggle">
+    <div class="bg-white max-w-md w-full p-6 text-center">
+      <h1 class="text-4xl font-bold leading-none" id="showScore">0</h1>
+      <p class="text-sm text-gray-500 mb-4">Points</p>
+      <div>
+        <button class="w-full bg-blue-500 text-white py-3 rounded-full text-sm" id="startGame">Start Game</button>
+      </div>
+    </div>
+  </div>
+  <canvas></canvas>
+  <!-- GSAP JavaScript library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
